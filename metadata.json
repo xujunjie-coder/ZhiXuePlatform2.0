@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Remix: 智学平台",
+  "description": "一个集成了学习概览、视频讲解、算法可视化、考试中心和AI助手的全方位智能学术学习与评估平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

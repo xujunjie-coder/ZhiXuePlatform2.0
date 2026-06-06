@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>智学云教 | 教师工作台 - 学生管理</title>
+    <!-- Material Icons and Plus Jakarta Sans Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch || globalThis.fetch;
+          var descriptor = Object.getOwnPropertyDescriptor(window, 'fetch') || 
+                           Object.getOwnPropertyDescriptor(Object.getPrototypeOf(window), 'fetch');
+          
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return originalFetch;
+            },
+            set: function(val) {
+              originalFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var originalFetch2 = globalThis.fetch;
+            Object.defineProperty(globalThis, 'fetch', {
+              get: function() { return originalFetch2; },
+              set: function(val) { originalFetch2 = val; },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (err) {
+            console.warn("Failed to patch fetch:", err);
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
